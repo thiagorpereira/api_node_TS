@@ -6,10 +6,8 @@ interface ICreateCategoryDTO {
   description: string;
 }
 
-
 class CategoriesRepository {
   private categories: Category[];
-
   constructor() {
     this.categories = [];
   }
@@ -23,6 +21,10 @@ class CategoriesRepository {
     })
 
     this.categories.push(category);
+  }
+
+  list(): Category[] {
+    return this.categories;
   }
 }
 
