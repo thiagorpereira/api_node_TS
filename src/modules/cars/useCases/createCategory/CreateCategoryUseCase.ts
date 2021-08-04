@@ -10,7 +10,6 @@ class CreateCategoryUseCase {
   constructor(categoriesRepository: ICategoriesRepository) {
     this.categoriesRepository = categoriesRepository;
   } */
-
   constructor(private categoriesRepository: ICategoriesRepository) { } 
 
   execute({ description, name }: IRequest): void {
